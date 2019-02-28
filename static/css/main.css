@@ -26,3 +26,9 @@ form>input[type="submit"] {
   font-size: 22px;
   padding: 25px;
 }
+
+.table {
+  margin-top: 100px;
+  /* margin-left: 100px;
+  margin-right: 100px; */
+}

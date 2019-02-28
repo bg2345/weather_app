@@ -5,10 +5,89 @@
     <title>Weather App - Animal</title>
 
     <!-- attach css -->
+    <!-- CSS for Boostrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- attach own css -->
+    <link rel="stylesheet" href="./static/css/main.css">
   </head>
+
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="../index.html">Weather App</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="../index.html">Home</a>
+        </li>
+        <li class="nav-item active">
+          <a class="../animal.html" href="#">Animals<span class="sr-only">(current)</span></a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
   <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Name</th>
+          <th scope="col">Species</th>
+          <th scope="col">Foods</th>
+
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td id="name1"></td>
+          <td id="species1"></td>
+          <td id="likes1"></td>
+
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td id="name2"></td>
+          <td id="species2"></td>
+          <td id="likes2"></td>
+
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td id="name3"></td>
+          <td id="species3"></td>
+          <td id="likes3"></td>
+          
+        </tr>
+      </tbody>
+  </table>
+  </div>
+</div>
+  </div>
+
 
 
     <!-- attch bootstrap, jQuery, and our own JS app.js and animal.js-->
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+
+    <!-- Attach bootstrap 4 JS files -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <!-- attach own JS -->
+    <script type="module" src="./static/js/app.js"></script>
+    <script type="module" src="./static/js/animal.js"></script>
   </body>
 </html>
